@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     // Pair is used for Observable.Pairwise
     [Serializable]

@@ -2,13 +2,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
-using UniRx.Triggers;
+using exiii.Unity.Rx.Triggers;
 
 #if !UniRxLibrary
-using ObservableUnity = UniRx.Observable;
+using ObservableUnity = exiii.Unity.Rx.Observable;
 #endif
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     public static partial class ObserveExtensions
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 // using System.Linq; do not use LINQ
 using System.Text;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     // copy, modified from Rx Official
 

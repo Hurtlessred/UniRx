@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using UniRx.Triggers;
+using exiii.Unity.Rx.Triggers;
 using UnityEngine;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     public static partial class DisposableExtensions
     {

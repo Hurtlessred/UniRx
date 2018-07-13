@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace UniRx.Operators
+namespace exiii.Unity.Rx.Operators
 {
     internal class SwitchObservable<T> : OperatorObservableBase<T>
     {

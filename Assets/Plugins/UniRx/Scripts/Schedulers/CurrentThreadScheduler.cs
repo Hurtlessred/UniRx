@@ -4,13 +4,13 @@
 
 using System.ComponentModel;
 using System.Threading;
-using UniRx.InternalUtil;
-using UniRx;
+using exiii.Unity.Rx.InternalUtil;
+using exiii.Unity.Rx;
 using System;
 using System.Diagnostics;
 using System.Collections.Generic;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
 
     public static partial class Scheduler

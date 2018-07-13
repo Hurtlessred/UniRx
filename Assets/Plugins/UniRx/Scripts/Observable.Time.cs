@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using UniRx.Operators;
+using exiii.Unity.Rx.Operators;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     // Timer, Interval, etc...
     public static partial class Observable
@@ -67,14 +67,14 @@ namespace UniRx
             return new TimestampObservable<TSource>(source, scheduler);
         }
 
-        public static IObservable<UniRx.TimeInterval<TSource>> TimeInterval<TSource>(this IObservable<TSource> source)
+        public static IObservable<exiii.Unity.Rx.TimeInterval<TSource>> TimeInterval<TSource>(this IObservable<TSource> source)
         {
             return TimeInterval(source, Scheduler.DefaultSchedulers.TimeBasedOperations);
         }
 
-        public static IObservable<UniRx.TimeInterval<TSource>> TimeInterval<TSource>(this IObservable<TSource> source, IScheduler scheduler)
+        public static IObservable<exiii.Unity.Rx.TimeInterval<TSource>> TimeInterval<TSource>(this IObservable<TSource> source, IScheduler scheduler)
         {
-            return new UniRx.Operators.TimeIntervalObservable<TSource>(source, scheduler);
+            return new exiii.Unity.Rx.Operators.TimeIntervalObservable<TSource>(source, scheduler);
         }
 
         public static IObservable<T> Delay<T>(this IObservable<T> source, TimeSpan dueTime)

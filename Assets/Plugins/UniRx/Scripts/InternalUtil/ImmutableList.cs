@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace UniRx.InternalUtil
+namespace exiii.Unity.Rx.InternalUtil
 {
     // ImmutableList is sometimes useful, use for public.
     public class ImmutableList<T>

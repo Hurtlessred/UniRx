@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     public static class Observer
     {
@@ -35,17 +35,17 @@ namespace UniRx
 
         public static IObserver<T> Create<T>(Action<T> onNext)
         {
-            return Create<T>(onNext, UniRx.Stubs.Throw, UniRx.Stubs.Nop);
+            return Create<T>(onNext, exiii.Unity.Rx.Stubs.Throw, exiii.Unity.Rx.Stubs.Nop);
         }
 
         public static IObserver<T> Create<T>(Action<T> onNext, Action<Exception> onError)
         {
-            return Create<T>(onNext, onError, UniRx.Stubs.Nop);
+            return Create<T>(onNext, onError, exiii.Unity.Rx.Stubs.Nop);
         }
 
         public static IObserver<T> Create<T>(Action<T> onNext, Action onCompleted)
         {
-            return Create<T>(onNext, UniRx.Stubs.Throw, onCompleted);
+            return Create<T>(onNext, exiii.Unity.Rx.Stubs.Throw, onCompleted);
         }
 
         public static IObserver<T> Create<T>(Action<T> onNext, Action<Exception> onError, Action onCompleted)
@@ -353,7 +353,7 @@ namespace UniRx
             }
         }
 
-        class AutoDetachObserver<T> : UniRx.Operators.OperatorObserverBase<T, T>
+        class AutoDetachObserver<T> : exiii.Unity.Rx.Operators.OperatorObserverBase<T, T>
         {
             public AutoDetachObserver(IObserver<T> observer, IDisposable cancel)
                 : base(observer, cancel)
@@ -392,20 +392,21 @@ namespace UniRx
     {
         public static IObserver<T> Synchronize<T>(this IObserver<T> observer)
         {
-            return new UniRx.Operators.SynchronizedObserver<T>(observer, new object());
+            return new exiii.Unity.Rx.Operators.SynchronizedObserver<T>(observer, new object());
         }
 
         public static IObserver<T> Synchronize<T>(this IObserver<T> observer, object gate)
         {
-            return new UniRx.Operators.SynchronizedObserver<T>(observer, gate);
+            return new exiii.Unity.Rx.Operators.SynchronizedObserver<T>(observer, gate);
         }
     }
 
     public static partial class ObservableExtensions
     {
+        /*
         public static IDisposable Subscribe<T>(this IObservable<T> source)
         {
-            return source.Subscribe(UniRx.InternalUtil.ThrowObserver<T>.Instance);
+            return source.Subscribe(exiii.Unity.Rx.InternalUtil.ThrowObserver<T>.Instance);
         }
 
         public static IDisposable Subscribe<T>(this IObservable<T> source, Action<T> onNext)
@@ -427,6 +428,7 @@ namespace UniRx
         {
             return source.Subscribe(Observer.CreateSubscribeObserver(onNext, onError, onCompleted));
         }
+        */
 
         public static IDisposable SubscribeWithState<T, TState>(this IObservable<T> source, TState state, Action<T, TState> onNext)
         {
@@ -521,3 +523,35 @@ namespace UniRx
         public static readonly Action<Exception, T1, T2, T3> Throw = (ex, _, __, ___) => { throw ex; };
     }
 }
+
+namespace exiii.Unity.Rx.Subscribe
+{
+    public static partial class ObservableExtensions
+    {
+        public static IDisposable Subscribe<T>(this IObservable<T> source)
+        {
+            return source.Subscribe(exiii.Unity.Rx.InternalUtil.ThrowObserver<T>.Instance);
+        }
+
+        public static IDisposable Subscribe<T>(this IObservable<T> source, Action<T> onNext)
+        {
+            return source.Subscribe(Observer.CreateSubscribeObserver(onNext, Stubs.Throw, Stubs.Nop));
+        }
+
+        public static IDisposable Subscribe<T>(this IObservable<T> source, Action<T> onNext, Action<Exception> onError)
+        {
+            return source.Subscribe(Observer.CreateSubscribeObserver(onNext, onError, Stubs.Nop));
+        }
+
+        public static IDisposable Subscribe<T>(this IObservable<T> source, Action<T> onNext, Action onCompleted)
+        {
+            return source.Subscribe(Observer.CreateSubscribeObserver(onNext, Stubs.Throw, onCompleted));
+        }
+
+        public static IDisposable Subscribe<T>(this IObservable<T> source, Action<T> onNext, Action<Exception> onError, Action onCompleted)
+        {
+            return source.Subscribe(Observer.CreateSubscribeObserver(onNext, onError, onCompleted));
+        }
+    }
+}
+

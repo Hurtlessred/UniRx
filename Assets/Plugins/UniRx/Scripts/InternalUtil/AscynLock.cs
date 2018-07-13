@@ -3,7 +3,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace UniRx.InternalUtil
+namespace exiii.Unity.Rx.InternalUtil
 {
     /// <summary>
     /// Asynchronous lock.

@@ -4,10 +4,10 @@ using System.Threading;
 using UnityEngine;
 
 #if !UniRxLibrary
-using ObservableUnity = UniRx.Observable;
+using ObservableUnity = exiii.Unity.Rx.Observable;
 #endif
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     public static partial class AsyncOperationExtensions
     {

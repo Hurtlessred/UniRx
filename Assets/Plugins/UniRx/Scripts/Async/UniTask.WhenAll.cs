@@ -8,7 +8,7 @@ using System.Runtime.CompilerServices;
 using System.Runtime.ExceptionServices;
 using System.Threading;
 
-namespace UniRx.Async
+namespace exiii.Unity.Rx.Async
 {
     public partial struct UniTask
     {

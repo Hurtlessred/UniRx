@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace UniRx.Operators
+namespace exiii.Unity.Rx.Operators
 {
     internal class DelayFrameObservable<T> : OperatorObservableBase<T>
     {

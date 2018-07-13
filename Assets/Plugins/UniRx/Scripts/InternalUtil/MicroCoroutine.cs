@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace UniRx.InternalUtil
+namespace exiii.Unity.Rx.InternalUtil
 {
     /// <summary>
     /// Simple supports(only yield return null) lightweight, threadsafe coroutine dispatcher.

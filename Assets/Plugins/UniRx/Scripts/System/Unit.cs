@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     [Serializable]
     public struct Unit : IEquatable<Unit>

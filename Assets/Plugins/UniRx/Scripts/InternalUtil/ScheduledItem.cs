@@ -5,7 +5,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace UniRx.InternalUtil
+namespace exiii.Unity.Rx.InternalUtil
 {
     /// <summary>
     /// Abstract base class for scheduled work items.

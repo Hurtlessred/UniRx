@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     public static partial class Observable
     {

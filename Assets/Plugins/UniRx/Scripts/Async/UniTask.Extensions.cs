@@ -6,7 +6,7 @@ using System.Collections;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace UniRx.Async
+namespace exiii.Unity.Rx.Async
 {
     public static class UniTaskExtensions
     {

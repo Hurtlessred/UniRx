@@ -6,7 +6,7 @@ using System;
 using System.Threading.Tasks;
 using System.Threading;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     /// <summary>
     /// Provides a set of static methods for converting tasks to observable sequences.

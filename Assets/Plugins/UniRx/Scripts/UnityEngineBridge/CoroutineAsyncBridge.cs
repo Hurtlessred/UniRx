@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     public class CoroutineAsyncBridge : INotifyCompletion
     {
@@ -98,7 +98,7 @@ namespace UniRx
 
 #if !CSHARP_7_OR_LATER
 
-        // should use UniRx.Async in C# 7.0
+        // should use exiii.Unity.Rx.Async in C# 7.0
 
         public static CoroutineAsyncBridge<AsyncOperation> GetAwaiter(this AsyncOperation asyncOperation)
         {

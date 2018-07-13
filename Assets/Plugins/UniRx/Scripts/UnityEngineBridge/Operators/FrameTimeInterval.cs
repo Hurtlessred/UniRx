@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace UniRx.Operators
+namespace exiii.Unity.Rx.Operators
 {
-    internal class FrameTimeIntervalObservable<T> : OperatorObservableBase<UniRx.TimeInterval<T>>
+    internal class FrameTimeIntervalObservable<T> : OperatorObservableBase<exiii.Unity.Rx.TimeInterval<T>>
     {
         readonly IObservable<T> source;
         readonly bool ignoreTimeScale;
@@ -14,17 +14,17 @@ namespace UniRx.Operators
             this.ignoreTimeScale = ignoreTimeScale;
         }
 
-        protected override IDisposable SubscribeCore(IObserver<UniRx.TimeInterval<T>> observer, IDisposable cancel)
+        protected override IDisposable SubscribeCore(IObserver<exiii.Unity.Rx.TimeInterval<T>> observer, IDisposable cancel)
         {
             return source.Subscribe(new FrameTimeInterval(this, observer, cancel));
         }
 
-        class FrameTimeInterval : OperatorObserverBase<T, UniRx.TimeInterval<T>>
+        class FrameTimeInterval : OperatorObserverBase<T, exiii.Unity.Rx.TimeInterval<T>>
         {
             readonly FrameTimeIntervalObservable<T> parent;
             float lastTime;
 
-            public FrameTimeInterval(FrameTimeIntervalObservable<T> parent, IObserver<UniRx.TimeInterval<T>> observer, IDisposable cancel)
+            public FrameTimeInterval(FrameTimeIntervalObservable<T> parent, IObserver<exiii.Unity.Rx.TimeInterval<T>> observer, IDisposable cancel)
                 : base(observer, cancel)
             {
                 this.parent = parent;
@@ -41,7 +41,7 @@ namespace UniRx.Operators
                 var span = now - lastTime;
                 lastTime = now;
 
-                base.observer.OnNext(new UniRx.TimeInterval<T>(value, TimeSpan.FromSeconds(span)));
+                base.observer.OnNext(new exiii.Unity.Rx.TimeInterval<T>(value, TimeSpan.FromSeconds(span)));
             }
 
             public override void OnError(Exception error)

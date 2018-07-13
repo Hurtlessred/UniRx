@@ -8,7 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     /// <summary>
     /// Represents a value associated with time interval information.

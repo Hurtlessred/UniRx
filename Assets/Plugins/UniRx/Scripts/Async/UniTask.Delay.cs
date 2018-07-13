@@ -5,7 +5,7 @@ using System;
 using System.Threading;
 using UnityEngine;
 
-namespace UniRx.Async
+namespace exiii.Unity.Rx.Async
 {
     public partial struct UniTask
     {

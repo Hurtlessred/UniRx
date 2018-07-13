@@ -7,10 +7,10 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Threading;
-using UniRx.InternalUtil;
+using exiii.Unity.Rx.InternalUtil;
 using UnityEngine;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     public sealed class MainThreadDispatcher : MonoBehaviour
     {

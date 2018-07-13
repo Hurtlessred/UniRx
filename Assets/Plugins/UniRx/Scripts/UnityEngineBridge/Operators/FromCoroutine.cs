@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Threading;
 
-namespace UniRx.Operators
+namespace exiii.Unity.Rx.Operators
 {
     internal class FromCoroutineObservable<T> : OperatorObservableBase<T>
     {

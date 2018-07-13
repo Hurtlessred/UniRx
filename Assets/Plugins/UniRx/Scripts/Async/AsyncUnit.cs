@@ -3,7 +3,7 @@
 
 using System;
 
-namespace UniRx.Async
+namespace exiii.Unity.Rx.Async
 {
     public struct AsyncUnit : IEquatable<AsyncUnit>
     {

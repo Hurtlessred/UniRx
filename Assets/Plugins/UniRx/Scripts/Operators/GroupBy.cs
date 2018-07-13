@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using UniRx.Operators;
+using exiii.Unity.Rx.Operators;
 
-namespace UniRx.Operators
+namespace exiii.Unity.Rx.Operators
 {
     internal class GroupedObservable<TKey, TElement> : IGroupedObservable<TKey, TElement>
     {

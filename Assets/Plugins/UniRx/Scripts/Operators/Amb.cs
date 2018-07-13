@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace UniRx.Operators
+namespace exiii.Unity.Rx.Operators
 {
     internal class AmbObservable<T> : OperatorObservableBase<T>
     {
@@ -92,7 +92,7 @@ namespace UniRx.Operators
                     }
                     finally
                     {
-                        targetObserver = UniRx.InternalUtil.EmptyObserver<T>.Instance;
+                        targetObserver = exiii.Unity.Rx.InternalUtil.EmptyObserver<T>.Instance;
                         targetDisposable.Dispose();
                     }
                 }
@@ -105,7 +105,7 @@ namespace UniRx.Operators
                     }
                     finally
                     {
-                        targetObserver = UniRx.InternalUtil.EmptyObserver<T>.Instance;
+                        targetObserver = exiii.Unity.Rx.InternalUtil.EmptyObserver<T>.Instance;
                         targetDisposable.Dispose();
                     }
                 }

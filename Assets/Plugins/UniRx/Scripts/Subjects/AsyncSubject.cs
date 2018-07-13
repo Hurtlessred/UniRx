@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using UniRx.InternalUtil;
+using exiii.Unity.Rx.InternalUtil;
 
 #if (NET_4_6 || NET_STANDARD_2_0)
 using System.Runtime.CompilerServices;
 using System.Threading;
 #endif
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     public sealed class AsyncSubject<T> : ISubject<T>, IOptimizedObservable<T>, IDisposable
 #if (NET_4_6 || NET_STANDARD_2_0)

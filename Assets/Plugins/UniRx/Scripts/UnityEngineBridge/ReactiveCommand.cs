@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     public interface IReactiveCommand<T> : IObservable<T>
     {
@@ -167,7 +167,7 @@ namespace UniRx
     /// </summary>
     public class AsyncReactiveCommand<T> : IAsyncReactiveCommand<T>
     {
-        UniRx.InternalUtil.ImmutableList<Func<T, IObservable<Unit>>> asyncActions = UniRx.InternalUtil.ImmutableList<Func<T, IObservable<Unit>>>.Empty;
+        exiii.Unity.Rx.InternalUtil.ImmutableList<Func<T, IObservable<Unit>>> asyncActions = exiii.Unity.Rx.InternalUtil.ImmutableList<Func<T, IObservable<Unit>>>.Empty;
 
         readonly object gate = new object();
         readonly IReactiveProperty<bool> canExecuteSource;

@@ -1,7 +1,7 @@
 ﻿using System;
-using UniRx.Operators;
+using exiii.Unity.Rx.Operators;
 
-namespace UniRx.Operators
+namespace exiii.Unity.Rx.Operators
 {
     internal class AsObservableObservable<T> : OperatorObservableBase<T>
     {

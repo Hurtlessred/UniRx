@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     /// <summary>
     /// Represents a group of disposable resources that are disposed together.

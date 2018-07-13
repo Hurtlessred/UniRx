@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     // should be use Interlocked.CompareExchange for Threadsafe?
     // but CompareExchange cause ExecutionEngineException on iOS.

@@ -10,7 +10,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     public interface IStructuralEquatable
     {

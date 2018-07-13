@@ -4,7 +4,7 @@
 
 using System;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     public interface IObserver<T>
     {

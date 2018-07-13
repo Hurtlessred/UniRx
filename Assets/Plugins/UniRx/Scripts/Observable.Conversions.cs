@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using UniRx.Operators;
+using exiii.Unity.Rx.Operators;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     public static partial class Observable
     {
@@ -11,7 +11,7 @@ namespace UniRx
             if (source == null) throw new ArgumentNullException("source");
 
             // optimize, don't double wrap
-            if (source is UniRx.Operators.AsObservableObservable<T>)
+            if (source is exiii.Unity.Rx.Operators.AsObservableObservable<T>)
             {
                 return source;
             }

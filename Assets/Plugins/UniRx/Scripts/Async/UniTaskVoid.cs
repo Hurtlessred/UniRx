@@ -4,9 +4,9 @@
 using System;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
-using UniRx.Async.CompilerServices;
+using exiii.Unity.Rx.Async.CompilerServices;
 
-namespace UniRx.Async
+namespace exiii.Unity.Rx.Async
 {
     [AsyncMethodBuilder(typeof(AsyncUniTaskVoidMethodBuilder))]
     public struct UniTaskVoid

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     public static partial class Observable
     {

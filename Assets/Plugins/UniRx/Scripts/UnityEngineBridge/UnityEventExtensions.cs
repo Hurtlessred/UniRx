@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Text;
 using UnityEngine.Events;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     public static partial class UnityEventExtensions
     {

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using UniRx.Operators;
+using exiii.Unity.Rx.Operators;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     public static partial class Observable
     {

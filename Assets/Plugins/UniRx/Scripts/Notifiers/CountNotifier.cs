@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     /// <summary>Event kind of CountNotifier.</summary>
     public enum CountChangedStatus

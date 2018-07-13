@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace UniRx.Diagnostics
+namespace exiii.Unity.Rx.Diagnostics
 {
     public static class ObservableDebugExtensions
     {
@@ -25,7 +25,7 @@ namespace UniRx.Diagnostics
         /// <summary>
         /// Debug helper of observbale stream. Works for only DEBUG symbol.
         /// </summary>
-        public static IObservable<T> Debug<T>(this IObservable<T> source, UniRx.Diagnostics.Logger logger)
+        public static IObservable<T> Debug<T>(this IObservable<T> source, exiii.Unity.Rx.Diagnostics.Logger logger)
         {
 #if DEBUG
             return source.Materialize()

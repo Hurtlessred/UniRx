@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace UniRx.Operators
+namespace exiii.Unity.Rx.Operators
 {
     // implements note : all field must be readonly.
     public abstract class OperatorObservableBase<T> : IObservable<T>, IOptimizedObservable<T>

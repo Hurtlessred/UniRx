@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 #endif
 
-namespace UniRx.Triggers
+namespace exiii.Unity.Rx.Triggers
 {
     // for Component
     public static partial class ObservableTriggerExtensions

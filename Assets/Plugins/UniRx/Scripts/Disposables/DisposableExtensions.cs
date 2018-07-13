@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     public static partial class DisposableExtensions
     {

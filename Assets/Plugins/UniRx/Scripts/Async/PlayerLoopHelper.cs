@@ -5,9 +5,9 @@ using System;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Experimental.LowLevel;
-using UniRx.Async.Internal;
+using exiii.Unity.Rx.Async.Internal;
 
-namespace UniRx.Async
+namespace exiii.Unity.Rx.Async
 {
     public static class UniTaskLoopRunners
     {

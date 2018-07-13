@@ -5,7 +5,7 @@ using System.Threading;
 using UnityEngine;
 #endif
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     public interface IReadOnlyReactiveProperty<T> : IObservable<T>
     {

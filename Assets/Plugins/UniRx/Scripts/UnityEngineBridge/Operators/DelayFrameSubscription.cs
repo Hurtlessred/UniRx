@@ -3,10 +3,10 @@
 #if UniRxLibrary
 using UnityObservable = UniRx.ObservableUnity;
 #else
-using UnityObservable = UniRx.Observable;
+using UnityObservable = exiii.Unity.Rx.Observable;
 #endif
 
-namespace UniRx.Operators
+namespace exiii.Unity.Rx.Operators
 {
     internal class DelayFrameSubscriptionObservable<T> : OperatorObservableBase<T>
     {

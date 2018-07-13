@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Runtime.ExceptionServices;
 using System.Threading;
 
-namespace UniRx.Async
+namespace exiii.Unity.Rx.Async
 {
     public interface IPromise<T>
     {

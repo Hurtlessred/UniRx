@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace UniRx.Operators
+namespace exiii.Unity.Rx.Operators
 {
     internal class SkipUntilObservable<T, TOther> : OperatorObservableBase<T>
     {
@@ -63,7 +63,7 @@ namespace UniRx.Operators
                 public SkipUntil(SkipUntilOuterObserver parent, IDisposable subscription)
                 {
                     this.parent = parent;
-                    observer = UniRx.InternalUtil.EmptyObserver<T>.Instance;
+                    observer = exiii.Unity.Rx.InternalUtil.EmptyObserver<T>.Instance;
                     this.subscription = subscription;
                 }
 

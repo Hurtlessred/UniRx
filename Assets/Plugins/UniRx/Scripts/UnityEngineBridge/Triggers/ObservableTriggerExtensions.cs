@@ -1,7 +1,7 @@
 ﻿using System; // require keep for Windows Universal App
 using UnityEngine;
 
-namespace UniRx.Triggers
+namespace exiii.Unity.Rx.Triggers
 {
     // for GameObject
     public static partial class ObservableTriggerExtensions

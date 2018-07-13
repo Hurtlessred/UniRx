@@ -5,7 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 
-namespace UniRx.Toolkit
+namespace exiii.Unity.Rx.Toolkit
 {
     /// <summary>
     /// Bass class of ObjectPool.
@@ -209,7 +209,7 @@ namespace UniRx.Toolkit
             observer.OnCompleted();
         }
 
-        #region IDisposable Support
+#region IDisposable Support
 
         protected virtual void Dispose(bool disposing)
         {
@@ -229,7 +229,7 @@ namespace UniRx.Toolkit
             Dispose(true);
         }
 
-        #endregion
+#endregion
     }
 
     /// <summary>
@@ -447,7 +447,7 @@ namespace UniRx.Toolkit
             observer.OnCompleted();
         }
 
-        #region IDisposable Support
+#region IDisposable Support
 
         protected virtual void Dispose(bool disposing)
         {
@@ -467,7 +467,7 @@ namespace UniRx.Toolkit
             Dispose(true);
         }
 
-        #endregion
+#endregion
     }
 }
 

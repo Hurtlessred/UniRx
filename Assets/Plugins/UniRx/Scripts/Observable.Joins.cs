@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     public static partial class Observable
     {

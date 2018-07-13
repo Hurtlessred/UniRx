@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     /// <summary>
     /// Notify value on setuped scheduler.

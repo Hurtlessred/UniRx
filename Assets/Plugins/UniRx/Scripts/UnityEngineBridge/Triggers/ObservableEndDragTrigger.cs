@@ -5,7 +5,7 @@ using System; // require keep for Windows Universal App
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace UniRx.Triggers
+namespace exiii.Unity.Rx.Triggers
 {
     [DisallowMultipleComponent]
     public class ObservableEndDragTrigger : ObservableTriggerBase, IEventSystemHandler, IEndDragHandler

@@ -5,9 +5,9 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
-using UniRx.Async.CompilerServices;
+using exiii.Unity.Rx.Async.CompilerServices;
 
-namespace UniRx.Async
+namespace exiii.Unity.Rx.Async
 {
     /// <summary>
     /// Lightweight unity specified task-like object.

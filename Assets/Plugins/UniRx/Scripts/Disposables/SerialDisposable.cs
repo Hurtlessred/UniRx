@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     public sealed class SerialDisposable : IDisposable, ICancelable
     {
