@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using exiii.Unity.Rx.Subscribe;
 
 namespace exiii.Unity.Rx.Operators
 {

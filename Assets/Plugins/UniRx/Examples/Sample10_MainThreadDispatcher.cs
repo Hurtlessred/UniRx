@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using UnityEngine;
+using exiii.Unity.Rx.Subscribe;
 
 namespace exiii.Unity.Rx.Examples
 {

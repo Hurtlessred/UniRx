@@ -4,6 +4,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
+using exiii.Unity.Rx.Subscribe;
 
 namespace exiii.Unity.Rx.Toolkit
 {
@@ -209,7 +210,7 @@ namespace exiii.Unity.Rx.Toolkit
             observer.OnCompleted();
         }
 
-        #region IDisposable Support
+#region IDisposable Support
 
         protected virtual void Dispose(bool disposing)
         {
@@ -229,7 +230,7 @@ namespace exiii.Unity.Rx.Toolkit
             Dispose(true);
         }
 
-        #endregion
+#endregion
     }
 
     /// <summary>
@@ -447,7 +448,7 @@ namespace exiii.Unity.Rx.Toolkit
             observer.OnCompleted();
         }
 
-        #region IDisposable Support
+#region IDisposable Support
 
         protected virtual void Dispose(bool disposing)
         {
@@ -467,7 +468,7 @@ namespace exiii.Unity.Rx.Toolkit
             Dispose(true);
         }
 
-        #endregion
+#endregion
     }
 }
 

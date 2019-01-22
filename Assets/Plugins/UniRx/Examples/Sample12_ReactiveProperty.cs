@@ -4,6 +4,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.UI;
+using exiii.Unity.Rx.Subscribe;
 
 namespace exiii.Unity.Rx.Examples
 {

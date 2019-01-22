@@ -24,6 +24,7 @@ using Unity.Collections;
 using System.Threading;
 using NUnit.Framework;
 using UnityEngine.TestTools;
+using exiii.Unity.Rx.Subscribe;
 
 namespace exiii.Unity.Rx.AsyncTests
 {

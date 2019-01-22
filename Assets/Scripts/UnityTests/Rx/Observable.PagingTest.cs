@@ -3,6 +3,7 @@ using NUnit.Framework;
 using System.Collections.Generic;
 using exiii.Unity.Rx;
 using System.Threading;
+using exiii.Unity.Rx.Subscribe;
 
 namespace exiii.Unity.Rx.Tests
 {

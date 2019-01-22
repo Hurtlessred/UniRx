@@ -2,6 +2,7 @@
 
 using UnityEngine;
 using exiii.Unity.Rx.Triggers; // for enable gameObject.EventAsObservbale()
+using exiii.Unity.Rx.Subscribe;
 
 namespace exiii.Unity.Rx.Examples
 {

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using exiii.Unity.Rx.Triggers; // Triggers Namepsace
+using exiii.Unity.Rx.Subscribe;
 using System;
 
 namespace exiii.Unity.Rx.Examples

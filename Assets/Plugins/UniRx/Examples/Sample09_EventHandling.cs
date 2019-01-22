@@ -2,6 +2,7 @@
 
 using System;
 using UnityEngine;
+using exiii.Unity.Rx.Subscribe;
 
 namespace exiii.Unity.Rx.Examples
 {

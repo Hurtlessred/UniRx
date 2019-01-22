@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
+using exiii.Unity.Rx.Subscribe;
 
 namespace exiii.Unity.Rx.Tests.Operators
 {

@@ -2,6 +2,7 @@
 using System.Collections;
 using exiii.Unity.Rx.Diagnostics;
 using UnityEngine;
+using exiii.Unity.Rx.Subscribe;
 
 namespace exiii.Unity.Rx.Examples
 {

@@ -29,7 +29,7 @@
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE;UniRxLibrary,CSHARP_7_OR_LATER</DefineConstants>
+    <DefineConstants>TRACE;UniRxLibrary,CSHARP_7_OR_LATER;NET_4_6;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>bin\Release\exiii.Unity.Rx.xml</DocumentationFile>

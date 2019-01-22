@@ -402,33 +402,40 @@ namespace exiii.Unity.Rx
         }
     }
 
+    internal static class Stubs
+    {
+        public static readonly Action Nop = () => { };
+        public static readonly Action<Exception> Throw = ex => { ex.Throw(); };
+
+        // marker for CatchIgnore and Catch avoid iOS AOT problem.
+        public static IObservable<TSource> CatchIgnore<TSource>(Exception ex)
+        {
+            return Observable.Empty<TSource>();
+        }
+    }
+
+    internal static class Stubs<T>
+    {
+        public static readonly Action<T> Ignore = (T t) => { };
+        public static readonly Func<T, T> Identity = (T t) => t;
+        public static readonly Action<Exception, T> Throw = (ex, _) => { ex.Throw(); };
+    }
+
+    internal static class Stubs<T1, T2>
+    {
+        public static readonly Action<T1, T2> Ignore = (x, y) => { };
+        public static readonly Action<Exception, T1, T2> Throw = (ex, _, __) => { ex.Throw(); };
+    }
+
+
+    internal static class Stubs<T1, T2, T3>
+    {
+        public static readonly Action<T1, T2, T3> Ignore = (x, y, z) => { };
+        public static readonly Action<Exception, T1, T2, T3> Throw = (ex, _, __, ___) => { ex.Throw(); };
+    }
+
     public static partial class ObservableExtensions
     {
-        public static IDisposable Subscribe<T>(this IObservable<T> source)
-        {
-            return source.Subscribe(exiii.Unity.Rx.InternalUtil.ThrowObserver<T>.Instance);
-        }
-
-        public static IDisposable Subscribe<T>(this IObservable<T> source, Action<T> onNext)
-        {
-            return source.Subscribe(Observer.CreateSubscribeObserver(onNext, Stubs.Throw, Stubs.Nop));
-        }
-
-        public static IDisposable Subscribe<T>(this IObservable<T> source, Action<T> onNext, Action<Exception> onError)
-        {
-            return source.Subscribe(Observer.CreateSubscribeObserver(onNext, onError, Stubs.Nop));
-        }
-
-        public static IDisposable Subscribe<T>(this IObservable<T> source, Action<T> onNext, Action onCompleted)
-        {
-            return source.Subscribe(Observer.CreateSubscribeObserver(onNext, Stubs.Throw, onCompleted));
-        }
-
-        public static IDisposable Subscribe<T>(this IObservable<T> source, Action<T> onNext, Action<Exception> onError, Action onCompleted)
-        {
-            return source.Subscribe(Observer.CreateSubscribeObserver(onNext, onError, onCompleted));
-        }
-
         public static IDisposable SubscribeWithState<T, TState>(this IObservable<T> source, TState state, Action<T, TState> onNext)
         {
             return source.Subscribe(Observer.CreateSubscribeWithStateObserver(state, onNext, Stubs<TState>.Throw, Stubs<TState>.Ignore));
@@ -489,36 +496,35 @@ namespace exiii.Unity.Rx
             return source.Subscribe(Observer.CreateSubscribeWithState3Observer(state1, state2, state3, onNext, onError, onCompleted));
         }
     }
+}
 
-    internal static class Stubs
+namespace exiii.Unity.Rx.Subscribe
+{
+    public static partial class ObservableExtensions
     {
-        public static readonly Action Nop = () => { };
-        public static readonly Action<Exception> Throw = ex => { ex.Throw(); };
-
-        // marker for CatchIgnore and Catch avoid iOS AOT problem.
-        public static IObservable<TSource> CatchIgnore<TSource>(Exception ex)
+        public static IDisposable Subscribe<T>(this IObservable<T> source)
         {
-            return Observable.Empty<TSource>();
+            return source.Subscribe(exiii.Unity.Rx.InternalUtil.ThrowObserver<T>.Instance);
         }
-    }
 
-    internal static class Stubs<T>
-    {
-        public static readonly Action<T> Ignore = (T t) => { };
-        public static readonly Func<T, T> Identity = (T t) => t;
-        public static readonly Action<Exception, T> Throw = (ex, _) => { ex.Throw(); };
-    }
+        public static IDisposable Subscribe<T>(this IObservable<T> source, Action<T> onNext)
+        {
+            return source.Subscribe(Observer.CreateSubscribeObserver(onNext, Stubs.Throw, Stubs.Nop));
+        }
 
-    internal static class Stubs<T1, T2>
-    {
-        public static readonly Action<T1, T2> Ignore = (x, y) => { };
-        public static readonly Action<Exception, T1, T2> Throw = (ex, _, __) => { ex.Throw(); };
-    }
+        public static IDisposable Subscribe<T>(this IObservable<T> source, Action<T> onNext, Action<Exception> onError)
+        {
+            return source.Subscribe(Observer.CreateSubscribeObserver(onNext, onError, Stubs.Nop));
+        }
 
+        public static IDisposable Subscribe<T>(this IObservable<T> source, Action<T> onNext, Action onCompleted)
+        {
+            return source.Subscribe(Observer.CreateSubscribeObserver(onNext, Stubs.Throw, onCompleted));
+        }
 
-    internal static class Stubs<T1, T2, T3>
-    {
-        public static readonly Action<T1, T2, T3> Ignore = (x, y, z) => { };
-        public static readonly Action<Exception, T1, T2, T3> Throw = (ex, _, __, ___) => { ex.Throw(); };
+        public static IDisposable Subscribe<T>(this IObservable<T> source, Action<T> onNext, Action<Exception> onError, Action onCompleted)
+        {
+            return source.Subscribe(Observer.CreateSubscribeObserver(onNext, onError, onCompleted));
+        }
     }
 }
