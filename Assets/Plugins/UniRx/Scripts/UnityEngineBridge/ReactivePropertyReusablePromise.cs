@@ -4,10 +4,10 @@
 
 using System;
 using System.Threading;
-using UniRx.Async;
-using UniRx.Async.Internal;
+using exiii.Unity.Rx.Async;
+using exiii.Unity.Rx.Async.Internal;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     internal class ReactivePropertyReusablePromise<T> : IAwaiter<T>, IResolvePromise<T>
     {

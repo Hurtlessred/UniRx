@@ -1,7 +1,7 @@
 ﻿using System;
-using UniRx.InternalUtil;
+using exiii.Unity.Rx.InternalUtil;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     public sealed class BehaviorSubject<T> : ISubject<T>, IDisposable, IOptimizedObservable<T>
     {

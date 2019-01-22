@@ -5,7 +5,7 @@
 using System;
 using System.Runtime.CompilerServices;
 
-namespace UniRx.Async.Internal
+namespace exiii.Unity.Rx.Async.Internal
 {
     // optimized version of Standard Queue<T>.
     public class MinimumQueue<T>

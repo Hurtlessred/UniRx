@@ -3,7 +3,7 @@ using NUnit.Framework;
 using System.Collections.Generic;
 using System.Threading;
 
-namespace UniRx.Tests
+namespace exiii.Unity.Rx.Tests
 {
     
     public class ObservableTest
@@ -17,7 +17,7 @@ namespace UniRx.Tests
         [TearDown]
         public void Dispose()
         {
-            UniRx.Scheduler.SetDefaultForUnity();
+            exiii.Unity.Rx.Scheduler.SetDefaultForUnity();
         }
 
         [Test]

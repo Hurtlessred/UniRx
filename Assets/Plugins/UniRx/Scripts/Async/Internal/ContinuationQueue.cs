@@ -4,7 +4,7 @@
 using System;
 using System.Threading;
 
-namespace UniRx.Async.Internal
+namespace exiii.Unity.Rx.Async.Internal
 {
     internal class ContinuationQueue
     {

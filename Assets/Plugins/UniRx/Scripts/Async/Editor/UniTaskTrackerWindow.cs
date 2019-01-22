@@ -8,9 +8,9 @@ using System.Linq;
 using System.Reflection;
 using System;
 using UnityEditor.IMGUI.Controls;
-using UniRx.Async.Internal;
+using exiii.Unity.Rx.Async.Internal;
 
-namespace UniRx.Async.Editor
+namespace exiii.Unity.Rx.Async.Editor
 {
     public class UniTaskTrackerWindow : EditorWindow
     {
@@ -18,7 +18,7 @@ namespace UniRx.Async.Editor
 
         static UniTaskTrackerWindow window;
 
-        [MenuItem("Window/UniRx/UniTask Tracker")]
+        [MenuItem("Window/exiii.Unity.Rx/UniTask Tracker")]
         public static void OpenWindow()
         {
             if (window != null)

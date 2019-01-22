@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading;
 
-namespace UniRx.Async.Internal
+namespace exiii.Unity.Rx.Async.Internal
 {
     // Add, Remove, Enumerate with sweep. All operations are thread safe(in spinlock).
     public class WeakDictionary<TKey, TValue>

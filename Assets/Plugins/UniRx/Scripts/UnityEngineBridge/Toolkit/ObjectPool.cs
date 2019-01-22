@@ -5,7 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 
-namespace UniRx.Toolkit
+namespace exiii.Unity.Rx.Toolkit
 {
     /// <summary>
     /// Bass class of ObjectPool.

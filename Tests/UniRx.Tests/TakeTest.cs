@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace UniRx.Tests.Operators
+namespace exiii.Unity.Rx.Tests.Operators
 {
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
     public class TakeTest

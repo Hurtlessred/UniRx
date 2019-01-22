@@ -2,7 +2,7 @@
 
 using System;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     public struct CancellationToken
     {

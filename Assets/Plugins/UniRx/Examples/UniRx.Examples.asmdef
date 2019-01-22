@@ -1,8 +1,8 @@
 {
-    "name": "UniRx.Examples",
+    "name": "exiii.Unity.Rx.Examples",
     "references": [
-        "UniRx",
-        "UniRx.Async"
+        "exiii.Unity.Rx",
+        "exiii.Unity.Rx.Async"
     ],
     "optionalUnityReferences": [
         "TestAssemblies"

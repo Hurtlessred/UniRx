@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace UniRx.Operators
+namespace exiii.Unity.Rx.Operators
 {
     internal class RepeatObservable<T> : OperatorObservableBase<T>
     {

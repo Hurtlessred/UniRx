@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     public struct CollectionAddEvent<T> : IEquatable<CollectionAddEvent<T>>
     {

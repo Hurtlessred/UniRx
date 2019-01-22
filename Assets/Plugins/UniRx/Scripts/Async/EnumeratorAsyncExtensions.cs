@@ -5,9 +5,9 @@ using System;
 using System.Collections;
 using System.Runtime.ExceptionServices;
 using System.Threading;
-using UniRx.Async.Internal;
+using exiii.Unity.Rx.Async.Internal;
 
-namespace UniRx.Async
+namespace exiii.Unity.Rx.Async
 {
     public static class EnumeratorAsyncExtensions
     {

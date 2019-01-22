@@ -9,12 +9,12 @@ using System.Diagnostics;
 using System.Globalization;
 using System.Collections.Generic;
 using System;
-using UniRx.InternalUtil;
+using exiii.Unity.Rx.InternalUtil;
 
 #pragma warning disable 0659
 #pragma warning disable 0661
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     /// <summary>
     /// Provides a mechanism for receiving push-based notifications and returning a response.

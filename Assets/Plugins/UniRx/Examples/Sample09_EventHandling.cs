@@ -3,7 +3,7 @@
 using System;
 using UnityEngine;
 
-namespace UniRx.Examples
+namespace exiii.Unity.Rx.Examples
 {
     public class Sample09_EventHandling : MonoBehaviour
     {
@@ -43,7 +43,7 @@ namespace UniRx.Examples
                 .Subscribe()
                 .AddTo(disposables);
 
-            // AOT Safe EventHandling, use dummy capture, see:https://github.com/neuecc/UniRx/wiki/AOT-Exception-Patterns-and-Hacks
+            // AOT Safe EventHandling, use dummy capture, see:https://github.com/neuecc/exiii.Unity.Rx/wiki/AOT-Exception-Patterns-and-Hacks
             var capture = 0;
             Observable.FromEventPattern<EventHandler<MyEventArgs>, MyEventArgs>(h =>
                 {

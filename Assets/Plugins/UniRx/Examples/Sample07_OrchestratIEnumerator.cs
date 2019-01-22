@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 
-namespace UniRx.Examples
+namespace exiii.Unity.Rx.Examples
 {
     public class Sample07_OrchestratIEnumerator : MonoBehaviour
     {
@@ -30,7 +30,7 @@ namespace UniRx.Examples
         void Start()
         {
             // after completed AsyncA, run AsyncB as continuous routine.
-            // UniRx expands SelectMany(IEnumerator) as SelectMany(IEnumerator.ToObservable())
+            // exiii.Unity.Rx expands SelectMany(IEnumerator) as SelectMany(IEnumerator.ToObservable())
             var cancel = Observable.FromCoroutine(AsyncA)
                 .SelectMany(AsyncB)
                 .Subscribe();

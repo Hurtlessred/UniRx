@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("UniRxAnalyzer")]
+[assembly: AssemblyTitle("exiii.Unity.RxAnalyzer")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("UniRxAnalyzer")]
+[assembly: AssemblyProduct("exiii.Unity.RxAnalyzer")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

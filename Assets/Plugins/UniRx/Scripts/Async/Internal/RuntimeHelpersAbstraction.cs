@@ -6,7 +6,7 @@ using System;
 using UnityEngine;
 #endif
 
-namespace UniRx.Async.Internal
+namespace exiii.Unity.Rx.Async.Internal
 {
     public static class RuntimeHelpersAbstraction
     {

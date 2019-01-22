@@ -4,9 +4,9 @@
 using System;
 using System.Collections.Generic;
 using System.Threading;
-using UniRx.Async.Internal;
+using exiii.Unity.Rx.Async.Internal;
 
-namespace UniRx.Async
+namespace exiii.Unity.Rx.Async
 {
     public partial struct UniTask
     {

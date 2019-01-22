@@ -5,14 +5,14 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 
-namespace UniRx.Examples
+namespace exiii.Unity.Rx.Examples
 {
     public class Sample08_DetectDoubleClick : MonoBehaviour
     {
         void Start()
         {
             // Global event handling is very useful.
-            // UniRx can handle there events.
+            // exiii.Unity.Rx can handle there events.
             // Observable.EveryUpdate/EveryFixedUpdate/EveryEndOfFrame
             // Observable.EveryApplicationFocus/EveryApplicationPause
             // Observable.OnceApplicationQuit

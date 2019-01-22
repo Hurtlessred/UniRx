@@ -5,7 +5,7 @@ using System.Linq;
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace UniRx.Tests
+namespace exiii.Unity.Rx.Tests
 {
     class DecrementEnumerator : IEnumerator
     {
@@ -48,12 +48,12 @@ namespace UniRx.Tests
     
     public class MicroCoroutineTest
     {
-        static UniRx.InternalUtil.MicroCoroutine Create()
+        static exiii.Unity.Rx.InternalUtil.MicroCoroutine Create()
         {
             return new InternalUtil.MicroCoroutine(ex => Console.WriteLine(ex));
         }
 
-        static int FindLast(UniRx.InternalUtil.MicroCoroutine mc)
+        static int FindLast(exiii.Unity.Rx.InternalUtil.MicroCoroutine mc)
         {
             var coroutines = mc.GetType().GetField("coroutines", BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.GetField | BindingFlags.Instance);
             var enumerators = (IEnumerator[])coroutines.GetValue(mc);
@@ -81,7 +81,7 @@ namespace UniRx.Tests
             return tail;
         }
 
-        static int GetTailDynamic(UniRx.InternalUtil.MicroCoroutine mc)
+        static int GetTailDynamic(exiii.Unity.Rx.InternalUtil.MicroCoroutine mc)
         {
             var tail = mc.GetType().GetField("tail", BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.GetField | BindingFlags.Instance);
             return (int)tail.GetValue(mc);

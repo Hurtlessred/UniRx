@@ -3,7 +3,7 @@
 
 using System.Runtime.CompilerServices;
 
-namespace UniRx.Async
+namespace exiii.Unity.Rx.Async
 {
     public enum AwaiterStatus
     {

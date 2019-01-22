@@ -7,7 +7,7 @@ using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using System.Security;
 
-namespace UniRx.Async.CompilerServices
+namespace exiii.Unity.Rx.Async.CompilerServices
 {
     public struct AsyncUniTaskMethodBuilder
     {

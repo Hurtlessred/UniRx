@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine;
 
-namespace UniRx.Examples
+namespace exiii.Unity.Rx.Examples
 {
     public class Sample10_MainThreadDispatcher
     {

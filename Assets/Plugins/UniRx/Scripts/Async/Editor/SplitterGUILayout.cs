@@ -7,7 +7,7 @@ using System.Reflection;
 using UnityEditor;
 using UnityEngine;
 
-namespace UniRx.Async.Editor
+namespace exiii.Unity.Rx.Async.Editor
 {
     // reflection call of UnityEditor.SplitterGUILayout
     internal static class SplitterGUILayout

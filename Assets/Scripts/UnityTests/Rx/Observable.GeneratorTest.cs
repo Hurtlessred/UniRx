@@ -2,7 +2,7 @@
 using NUnit.Framework;
 using System.Collections.Generic;
 
-namespace UniRx.Tests
+namespace exiii.Unity.Rx.Tests
 {
     
     public class ObservableGeneratorTest
@@ -16,7 +16,7 @@ namespace UniRx.Tests
         [TearDown]
         public void Dispose()
         {
-            UniRx.Scheduler.SetDefaultForUnity();
+            exiii.Unity.Rx.Scheduler.SetDefaultForUnity();
         }
         [Test]
         public void Empty()

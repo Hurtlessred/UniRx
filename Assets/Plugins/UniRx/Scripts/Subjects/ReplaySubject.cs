@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using UniRx.InternalUtil;
+using exiii.Unity.Rx.InternalUtil;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     public sealed class ReplaySubject<T> : ISubject<T>, IOptimizedObservable<T>, IDisposable
     {

@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 using System.Threading;
 
-namespace UniRx.Tests
+namespace exiii.Unity.Rx.Tests
 {
     [TestClass]
     public class ObservableConcurrencyTest

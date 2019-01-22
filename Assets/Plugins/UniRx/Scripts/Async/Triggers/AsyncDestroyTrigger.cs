@@ -2,10 +2,10 @@
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
 
 using System.Threading;
-using UniRx.Async.Internal;
+using exiii.Unity.Rx.Async.Internal;
 using UnityEngine;
 
-namespace UniRx.Async.Triggers
+namespace exiii.Unity.Rx.Async.Triggers
 {
     [DisallowMultipleComponent]
     public class AsyncDestroyTrigger : MonoBehaviour

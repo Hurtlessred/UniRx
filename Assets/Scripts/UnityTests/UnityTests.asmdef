@@ -1,8 +1,8 @@
 {
     "name": "UnityTests",
     "references": [
-        "UniRx.Async",
-        "UniRx"
+        "exiii.Unity.Rx.Async",
+        "exiii.Unity.Rx"
     ],
     "optionalUnityReferences": [
         "TestAssemblies"

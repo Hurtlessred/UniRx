@@ -1,12 +1,12 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using UniRx.Async.Internal;
+using exiii.Unity.Rx.Async.Internal;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UniRx.Tests
+namespace exiii.Unity.Rx.Tests
 {
     [TestClass]
     public class ArrayPoolTest
@@ -14,7 +14,7 @@ namespace UniRx.Tests
         [TestMethod]
         public void Rent()
         {
-            var pool = UniRx.Async.Internal.ArrayPool<int>.Shared;
+            var pool = exiii.Unity.Rx.Async.Internal.ArrayPool<int>.Shared;
 
             {
                 var xs = pool.Rent(9);

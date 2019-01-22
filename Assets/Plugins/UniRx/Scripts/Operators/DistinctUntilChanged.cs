@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace UniRx.Operators
+namespace exiii.Unity.Rx.Operators
 {
     internal class DistinctUntilChangedObservable<T> : OperatorObservableBase<T>
     {

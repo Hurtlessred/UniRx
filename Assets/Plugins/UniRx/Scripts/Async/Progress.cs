@@ -4,7 +4,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace UniRx.Async
+namespace exiii.Unity.Rx.Async
 {
     /// <summary>
     /// Lightweight IProgress[T] factory.

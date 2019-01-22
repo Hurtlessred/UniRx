@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading;
 using NUnit.Framework;
 
-namespace UniRx.Tests.Operators
+namespace exiii.Unity.Rx.Tests.Operators
 {
 
     public class ContinueWithTest
@@ -18,7 +18,7 @@ namespace UniRx.Tests.Operators
         [TearDown]
         public void Dispose()
         {
-            UniRx.Scheduler.SetDefaultForUnity();
+            exiii.Unity.Rx.Scheduler.SetDefaultForUnity();
         }
 
         [Test]

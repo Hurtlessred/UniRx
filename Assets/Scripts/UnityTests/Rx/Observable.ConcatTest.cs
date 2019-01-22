@@ -3,7 +3,7 @@ using NUnit.Framework;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace UniRx.Tests
+namespace exiii.Unity.Rx.Tests
 {
     
     public class ObservableConcatTest

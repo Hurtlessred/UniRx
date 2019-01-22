@@ -6,7 +6,7 @@
 
 using UnityEngine;
 
-namespace UniRx.Examples
+namespace exiii.Unity.Rx.Examples
 {
     // sample script, attach your object.
     public class Sample01_ObservableWWW : MonoBehaviour

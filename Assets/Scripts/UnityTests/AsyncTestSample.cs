@@ -4,7 +4,7 @@
 using UnityEngine.TestTools;
 using System.Collections;
 using System;
-using UniRx.Async;
+using exiii.Unity.Rx.Async;
 using UnityEngine;
 using System.Linq;
 using UnityEngine.Playables;

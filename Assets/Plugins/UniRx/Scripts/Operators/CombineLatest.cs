@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace UniRx.Operators
+namespace exiii.Unity.Rx.Operators
 {
     public delegate TR CombineLatestFunc<T1, T2, T3, TR>(T1 arg1, T2 arg2, T3 arg3);
     public delegate TR CombineLatestFunc<T1, T2, T3, T4, TR>(T1 arg1, T2 arg2, T3 arg3, T4 arg4);
@@ -356,7 +356,7 @@ namespace UniRx.Operators
         }
     }
 
-    // generated from UniRx.Console.CombineLatestGenerator.tt
+    // generated from exiii.Unity.Rx.Console.CombineLatestGenerator.tt
     #region NTH
 
     internal class CombineLatestObservable<T1, T2, T3, TR> : OperatorObservableBase<TR>

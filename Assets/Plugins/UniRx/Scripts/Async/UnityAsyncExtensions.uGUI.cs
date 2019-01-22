@@ -4,13 +4,13 @@
 using System;
 using System.Runtime.CompilerServices;
 using System.Threading;
-using UniRx.Async.Internal;
+using exiii.Unity.Rx.Async.Internal;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
-using UniRx.Async.Triggers;
+using exiii.Unity.Rx.Async.Triggers;
 
-namespace UniRx.Async
+namespace exiii.Unity.Rx.Async
 {
     public static partial class UnityAsyncExtensions
     {

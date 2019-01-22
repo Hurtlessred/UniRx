@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace UniRx.Tests
+namespace exiii.Unity.Rx.Tests
 {
     [TestClass]
     public class QueueWorkerTest
@@ -12,7 +12,7 @@ namespace UniRx.Tests
         [TestMethod]
         public void Enq()
         {
-            var q = new UniRx.InternalUtil.ThreadSafeQueueWorker();
+            var q = new exiii.Unity.Rx.InternalUtil.ThreadSafeQueueWorker();
 
             var l = new List<int>();
             q.Enqueue(x => l.Add((int)x), 1);

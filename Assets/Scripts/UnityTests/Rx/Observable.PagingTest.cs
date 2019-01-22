@@ -1,10 +1,10 @@
 ﻿using System;
 using NUnit.Framework;
 using System.Collections.Generic;
-using UniRx;
+using exiii.Unity.Rx;
 using System.Threading;
 
-namespace UniRx.Tests
+namespace exiii.Unity.Rx.Tests
 {
 
     public class ObservablePagingTest
@@ -18,7 +18,7 @@ namespace UniRx.Tests
         [TearDown]
         public void Dispose()
         {
-            UniRx.Scheduler.SetDefaultForUnity();
+            exiii.Unity.Rx.Scheduler.SetDefaultForUnity();
         }
         [Test]
         public void Buffer()

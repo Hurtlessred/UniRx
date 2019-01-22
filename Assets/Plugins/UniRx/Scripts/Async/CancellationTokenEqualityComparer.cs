@@ -4,7 +4,7 @@
 using System.Collections.Generic;
 using System.Threading;
 
-namespace UniRx.Async
+namespace exiii.Unity.Rx.Async
 {
     public class CancellationTokenEqualityComparer : IEqualityComparer<CancellationToken>
     {

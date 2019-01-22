@@ -2,7 +2,7 @@
 
 using System;
 
-namespace UniRx.Async
+namespace exiii.Unity.Rx.Async
 {
     public static class ExceptionExtensions
     {

@@ -4,7 +4,7 @@
 using System;
 using UnityEngine;
 
-namespace UniRx.Triggers
+namespace exiii.Unity.Rx.Triggers
 {
     [DisallowMultipleComponent]
     public class ObservableTransformChangedTrigger : ObservableTriggerBase

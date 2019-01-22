@@ -1,7 +1,7 @@
 ﻿using System;
 using NUnit.Framework;
 
-namespace UniRx.Tests.Operators
+namespace exiii.Unity.Rx.Tests.Operators
 {
     public class RangeTest
     {

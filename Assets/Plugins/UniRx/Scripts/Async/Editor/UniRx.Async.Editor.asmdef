@@ -1,7 +1,7 @@
 {
-    "name": "UniRx.Async.Editor",
+    "name": "exiii.Unity.Rx.Async.Editor",
     "references": [
-        "UniRx.Async"
+        "exiii.Unity.Rx.Async"
     ],
     "optionalUnityReferences": [],
     "includePlatforms": [

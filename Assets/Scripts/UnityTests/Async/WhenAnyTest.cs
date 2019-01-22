@@ -9,14 +9,14 @@ using System.Linq;
 using System.Text;
 using UnityEngine.UI;
 using UnityEngine.Scripting;
-using UniRx;
-using UniRx.Async;
+using exiii.Unity.Rx;
+using exiii.Unity.Rx.Async;
 using Unity.Collections;
 using System.Threading;
 using NUnit.Framework;
 using UnityEngine.TestTools;
 
-namespace UniRx.AsyncTests
+namespace exiii.Unity.Rx.AsyncTests
 {
     public class WhenAnyTest
     {

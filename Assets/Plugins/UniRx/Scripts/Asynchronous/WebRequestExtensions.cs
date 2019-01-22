@@ -6,7 +6,7 @@ using System.Net;
 using System.Text;
 using System.Threading;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     public static class WebRequestExtensions
     {

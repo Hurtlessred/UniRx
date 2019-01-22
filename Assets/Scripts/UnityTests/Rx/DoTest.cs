@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using NUnit.Framework;
 
-namespace UniRx.Tests.Operators
+namespace exiii.Unity.Rx.Tests.Operators
 {
     
     public class DoTest

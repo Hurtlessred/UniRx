@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace UniRx.Operators
+namespace exiii.Unity.Rx.Operators
 {
     [TestClass]
     public class DurabilityTest

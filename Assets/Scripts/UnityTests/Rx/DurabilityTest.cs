@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using NUnit.Framework;
 
-namespace UniRx.Operators
+namespace exiii.Unity.Rx.Operators
 {
     
     public class DurabilityTest

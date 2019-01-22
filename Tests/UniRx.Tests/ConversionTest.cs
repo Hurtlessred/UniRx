@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace UniRx.Tests.Operators
+namespace exiii.Unity.Rx.Tests.Operators
 {
     [TestClass]
     public class ConversionTest

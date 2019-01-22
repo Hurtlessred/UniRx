@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     public sealed class DictionaryDisposable<TKey, TValue> : IDisposable, IDictionary<TKey, TValue>
         where TValue : IDisposable

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading;
 using UnityEngine;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
 #if UniRxLibrary
     public static partial class SchedulerUnity

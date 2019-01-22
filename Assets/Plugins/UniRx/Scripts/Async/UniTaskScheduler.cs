@@ -4,7 +4,7 @@
 using System;
 using System.Threading;
 
-namespace UniRx.Async
+namespace exiii.Unity.Rx.Async
 {
     // UniTask has no scheduler like TaskScheduler.
     // Only handle unobserved exception.

@@ -3,9 +3,9 @@
 
 using System;
 using System.Threading;
-using UniRx.Async;
+using exiii.Unity.Rx.Async;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     public static class UniTaskObservableExtensions
     {

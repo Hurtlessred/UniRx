@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace UniRx.Operators
+namespace exiii.Unity.Rx.Operators
 {
     internal class RepeatUntilObservable<T> : OperatorObservableBase<T>
     {

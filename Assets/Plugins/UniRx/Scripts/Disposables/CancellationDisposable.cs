@@ -8,7 +8,7 @@
 using System;
 using System.Threading;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     /// <summary>
     /// Represents a disposable resource that has an associated <seealso cref="T:System.Threading.CancellationToken"/> that will be set to the cancellation requested state upon disposal.

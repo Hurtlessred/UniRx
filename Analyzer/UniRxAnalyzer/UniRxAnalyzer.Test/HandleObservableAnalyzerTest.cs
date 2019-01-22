@@ -4,16 +4,16 @@ using Microsoft.CodeAnalysis.Diagnostics;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using TestHelper;
-using UniRxAnalyzer;
+using exiii.Unity.RxAnalyzer;
 
-namespace UniRxAnalyzer.Test
+namespace exiii.Unity.RxAnalyzer.Test
 {
     [TestClass]
     public class HandleObservableAnalyzerTest : DiagnosticVerifier
     {
         protected override DiagnosticAnalyzer GetCSharpDiagnosticAnalyzer()
         {
-            return new UniRxAnalyzer.HandleObservableAnalyzer();
+            return new exiii.Unity.RxAnalyzer.HandleObservableAnalyzer();
         }
 
         [TestMethod]
@@ -33,7 +33,7 @@ class Test
 }";
             var expected = new DiagnosticResult
             {
-                Id = UniRxAnalyzer.HandleObservableAnalyzer.DiagnosticId,
+                Id = exiii.Unity.RxAnalyzer.HandleObservableAnalyzer.DiagnosticId,
                 Message = "This call does not handle IObservable<T>.",
                 Severity = DiagnosticSeverity.Warning,
                 Locations = new[]
@@ -180,7 +180,7 @@ class Test
 
             var expected = new DiagnosticResult
             {
-                Id = UniRxAnalyzer.HandleObservableAnalyzer.DiagnosticId,
+                Id = exiii.Unity.RxAnalyzer.HandleObservableAnalyzer.DiagnosticId,
                 Message = "This call does not handle IObservable<T>.",
                 Severity = DiagnosticSeverity.Warning,
                 Locations = new[]
@@ -285,7 +285,7 @@ class Test
 }";
             var expected = new DiagnosticResult
             {
-                Id = UniRxAnalyzer.HandleObservableAnalyzer.DiagnosticId,
+                Id = exiii.Unity.RxAnalyzer.HandleObservableAnalyzer.DiagnosticId,
                 Message = "This call does not handle IObservable<T>.",
                 Severity = DiagnosticSeverity.Warning,
                 Locations = new[]

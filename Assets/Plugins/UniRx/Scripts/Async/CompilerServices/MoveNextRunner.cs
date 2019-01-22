@@ -5,7 +5,7 @@
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
 
-namespace UniRx.Async.CompilerServices
+namespace exiii.Unity.Rx.Async.CompilerServices
 {
     internal class MoveNextRunner<TStateMachine>
         where TStateMachine : IAsyncStateMachine

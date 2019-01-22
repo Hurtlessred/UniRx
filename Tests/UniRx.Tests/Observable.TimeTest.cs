@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 
-namespace UniRx.Tests
+namespace exiii.Unity.Rx.Tests
 {
     [TestClass]
     public class ObservableTimeTest

@@ -6,7 +6,7 @@ using System.Diagnostics;
 using System.Runtime.ExceptionServices;
 using System.Threading;
 
-namespace UniRx.Async.Internal
+namespace exiii.Unity.Rx.Async.Internal
 {
     // 'public', user can use this(but be careful).
 

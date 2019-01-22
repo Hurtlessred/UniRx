@@ -8,16 +8,16 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using UniRx.Async;
+using exiii.Unity.Rx.Async;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     class Program
     {
         static void Main(string[] args)
         {
             // my path:)
-            //var path = @"C:\Users\neuecc\Documents\Git\neuecc\UniRx\Assets\Plugins\UniRx\Scripts\UnityEngineBridge\Triggers";
+            //var path = @"C:\Users\neuecc\Documents\Git\neuecc\exiii.Unity.Rx\Assets\Plugins\exiii.Unity.Rx\Scripts\UnityEngineBridge\Triggers";
             //var outpath = @"";
             //TriggerFileGenerator.GenerateAsyncTrigger(path, outpath);
 

@@ -6,7 +6,7 @@ using UnityEngine;
 #pragma warning disable CS0618
 #endif
 
-namespace UniRx.Examples
+namespace exiii.Unity.Rx.Examples
 {
     public class Sample05_ConvertFromCoroutine
     {

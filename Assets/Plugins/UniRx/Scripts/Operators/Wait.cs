@@ -1,7 +1,7 @@
 ﻿using System;
-using UniRx.InternalUtil;
+using exiii.Unity.Rx.InternalUtil;
 
-namespace UniRx.Operators
+namespace exiii.Unity.Rx.Operators
 {
     internal class Wait<T> : IObserver<T>
     {

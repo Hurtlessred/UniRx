@@ -1,20 +1,20 @@
 ﻿using System;
 using System.Collections;
-using UniRx.Diagnostics;
+using exiii.Unity.Rx.Diagnostics;
 using UnityEngine;
 
-namespace UniRx.Examples
+namespace exiii.Unity.Rx.Examples
 {
     public class Sample11_Logger
     {
-        // UniRx.Diagnostics.Logger
+        // exiii.Unity.Rx.Diagnostics.Logger
         // logger is threadsafe, define per class with name.
-		static readonly UniRx.Diagnostics.Logger logger = new UniRx.Diagnostics.Logger("Sample11");
+		static readonly exiii.Unity.Rx.Diagnostics.Logger logger = new exiii.Unity.Rx.Diagnostics.Logger("Sample11");
 
         // call once at applicationinit
         public void ApplicationInitialize()
         {
-            // Log as Stream, UniRx.Diagnostics.ObservableLogger.Listener is IObservable<LogEntry>
+            // Log as Stream, exiii.Unity.Rx.Diagnostics.ObservableLogger.Listener is IObservable<LogEntry>
             // You can subscribe and output to any place.
             ObservableLogger.Listener.LogToUnityDebug();
 

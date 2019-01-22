@@ -7,10 +7,10 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Threading;
-using UniRx.InternalUtil;
+using exiii.Unity.Rx.InternalUtil;
 using UnityEngine;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     public sealed class MainThreadDispatcher : MonoBehaviour
     {
@@ -454,7 +454,7 @@ namespace UniRx
                 catch
                 {
                     // Throw exception when calling from a worker thread.
-                    var ex = new Exception("UniRx requires a MainThreadDispatcher component created on the main thread. Make sure it is added to the scene before calling UniRx from a worker thread.");
+                    var ex = new Exception("exiii.Unity.Rx requires a MainThreadDispatcher component created on the main thread. Make sure it is added to the scene before calling exiii.Unity.Rx from a worker thread.");
                     UnityEngine.Debug.LogException(ex);
                     throw ex;
                 }

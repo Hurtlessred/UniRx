@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UniRx.Tests
+namespace exiii.Unity.Rx.Tests
 {
     [TestClass]
     public class SelectWhereOptimizeTest

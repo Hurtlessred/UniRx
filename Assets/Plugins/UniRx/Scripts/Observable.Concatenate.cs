@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
-using UniRx.Operators;
+using exiii.Unity.Rx.Operators;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     // concatenate multiple observable
     // merge, concat, zip...

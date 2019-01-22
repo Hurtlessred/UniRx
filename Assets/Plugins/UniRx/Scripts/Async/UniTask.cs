@@ -5,10 +5,10 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
-using UniRx.Async.CompilerServices;
-using UniRx.Async.Internal;
+using exiii.Unity.Rx.Async.CompilerServices;
+using exiii.Unity.Rx.Async.Internal;
 
-namespace UniRx.Async
+namespace exiii.Unity.Rx.Async
 {
     /// <summary>
     /// Lightweight unity specified task-like object.

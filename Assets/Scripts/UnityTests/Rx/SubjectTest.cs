@@ -3,7 +3,7 @@ using NUnit.Framework;
 using System.Collections.Generic;
 using System.Threading;
 
-namespace UniRx.Tests
+namespace exiii.Unity.Rx.Tests
 {
     
     public class SubjectTests

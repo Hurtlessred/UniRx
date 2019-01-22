@@ -9,7 +9,7 @@ using System.Linq;
 using UnityEditor;
 #endif
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     [System.AttributeUsage(System.AttributeTargets.Field, AllowMultiple = false, Inherited = false)]
     public class InspectorDisplayAttribute : PropertyAttribute
@@ -188,7 +188,7 @@ namespace UniRx
             }
             else if (fldInfo == null)
             {
-                throw new Exception("Can't decode path, please report to UniRx's GitHub issues:" + string.Join(", ", paths));
+                throw new Exception("Can't decode path, please report to exiii.Unity.Rx's GitHub issues:" + string.Join(", ", paths));
             }
 
             var v = fldInfo.GetValue(obj);

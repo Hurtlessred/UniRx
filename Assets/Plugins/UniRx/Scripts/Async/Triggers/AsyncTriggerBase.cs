@@ -4,10 +4,10 @@
 using System;
 using System.Collections.Generic;
 using System.Threading;
-using UniRx.Async.Internal;
+using exiii.Unity.Rx.Async.Internal;
 using UnityEngine;
 
-namespace UniRx.Async.Triggers
+namespace exiii.Unity.Rx.Async.Triggers
 {
     public interface ICancelablePromise
     {

@@ -4,7 +4,7 @@
 using System;
 using System.Collections;
 
-namespace UniRx.Async
+namespace exiii.Unity.Rx.Async
 {
     // UnityEngine Bridges.
 

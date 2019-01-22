@@ -6,9 +6,9 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Runtime.ExceptionServices;
 using System.Threading;
-using UniRx.Async.Internal;
+using exiii.Unity.Rx.Async.Internal;
 
-namespace UniRx.Async
+namespace exiii.Unity.Rx.Async
 {
     public partial struct UniTask
     {

@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
 
-namespace UniRx.Async.Triggers
+namespace exiii.Unity.Rx.Async.Triggers
 {
     [DisallowMultipleComponent]
     public class AsyncAnimatorTrigger : AsyncTriggerBase

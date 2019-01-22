@@ -5,7 +5,7 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace UniRx.Examples
+namespace exiii.Unity.Rx.Examples
 {
     public class Sample12_ReactiveProperty : MonoBehaviour
     {
@@ -28,7 +28,7 @@ namespace UniRx.Examples
             MyButton.onClick.AsObservable().Subscribe(_ => enemy.CurrentHp.Value -= 99);
 
             // Toggle, Input etc as Observable(OnValueChangedAsObservable is helper for provide isOn value on subscribe)
-            // SubscribeToInteractable is UniRx.UI Extension Method, same as .interactable = x)
+            // SubscribeToInteractable is exiii.Unity.Rx.UI Extension Method, same as .interactable = x)
             MyToggle.OnValueChangedAsObservable().SubscribeToInteractable(MyButton);
 
             // input shows delay after 1 second
@@ -39,7 +39,7 @@ namespace UniRx.Examples
 #endif
                 .Where(x => x != null)
                 .Delay(TimeSpan.FromSeconds(1))
-                .SubscribeToText(MyText); // SubscribeToText is UniRx.UI Extension Method
+                .SubscribeToText(MyText); // SubscribeToText is exiii.Unity.Rx.UI Extension Method
 
             // converting for human visibility
             MySlider.OnValueChangedAsObservable()

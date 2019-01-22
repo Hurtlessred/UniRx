@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEditor.Callbacks;
 using UnityEngine;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     [InitializeOnLoad]
     public class ScenePlaybackDetector

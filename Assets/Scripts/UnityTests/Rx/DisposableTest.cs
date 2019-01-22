@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using NUnit.Framework;
 
-namespace UniRx.Tests
+namespace exiii.Unity.Rx.Tests
 {
     
     public class DisposableTest

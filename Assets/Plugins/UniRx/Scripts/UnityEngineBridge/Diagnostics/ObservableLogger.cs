@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
 
-namespace UniRx.Diagnostics
+namespace exiii.Unity.Rx.Diagnostics
 {
     public class ObservableLogger : IObservable<LogEntry>
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace UniRx.Operators
+namespace exiii.Unity.Rx.Operators
 {
     internal class MaterializeObservable<T> : OperatorObservableBase<Notification<T>>
     {

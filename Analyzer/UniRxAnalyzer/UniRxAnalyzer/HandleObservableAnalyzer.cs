@@ -5,7 +5,7 @@ using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Diagnostics;
 
-namespace UniRxAnalyzer
+namespace exiii.Unity.RxAnalyzer
 {
     [DiagnosticAnalyzer(LanguageNames.CSharp)]
     public class HandleObservableAnalyzer : DiagnosticAnalyzer
@@ -35,7 +35,7 @@ namespace UniRxAnalyzer
             foreach (var expr in invocationExpressions)
             {
                 var type = context.SemanticModel.GetTypeInfo(expr).Type;
-                // UniRx.IObservable? System.IObservable?
+                // exiii.Unity.Rx.IObservable? System.IObservable?
                 if (new[] { type }.Concat(type.AllInterfaces).Any(x => x.Name == "IObservable"))
                 {
                     if (ValidateInvocation(expr)) continue;

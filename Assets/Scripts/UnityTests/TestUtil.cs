@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace UniRx.Tests
+namespace exiii.Unity.Rx.Tests
 {
     public static class TestUtil
     {

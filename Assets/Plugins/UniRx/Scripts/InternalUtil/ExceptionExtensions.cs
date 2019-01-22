@@ -1,4 +1,4 @@
-﻿namespace UniRx.InternalUtil
+﻿namespace exiii.Unity.Rx.InternalUtil
 {
 	using System;
 

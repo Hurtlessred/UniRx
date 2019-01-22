@@ -8,10 +8,10 @@ using System.Linq;
 using System.Reflection;
 using System;
 using UnityEditor.IMGUI.Controls;
-using UniRx.Async.Internal;
+using exiii.Unity.Rx.Async.Internal;
 using System.Text;
 
-namespace UniRx.Async.Editor
+namespace exiii.Unity.Rx.Async.Editor
 {
     public class UniTaskTrackerViewItem : TreeViewItem
     {

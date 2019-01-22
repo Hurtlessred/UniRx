@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     public static class TriggerExtensionGenerator
     {

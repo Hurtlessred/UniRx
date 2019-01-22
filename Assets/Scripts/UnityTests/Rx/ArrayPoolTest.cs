@@ -1,13 +1,13 @@
 ﻿#if CSHARP_7_OR_LATER || (UNITY_2018_3_OR_NEWER && (NET_STANDARD_2_0 || NET_4_6))
 using NUnit.Framework;
 using System;
-using UniRx.Async.Internal;
+using exiii.Unity.Rx.Async.Internal;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UniRx.Tests
+namespace exiii.Unity.Rx.Tests
 {
     
     public class ArrayPoolTest
@@ -15,7 +15,7 @@ namespace UniRx.Tests
         [Test]
         public void Rent()
         {
-            var pool = UniRx.Async.Internal.ArrayPool<int>.Shared;
+            var pool = exiii.Unity.Rx.Async.Internal.ArrayPool<int>.Shared;
 
             {
                 var xs = pool.Rent(9);

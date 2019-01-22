@@ -9,7 +9,7 @@ using System.Threading;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace UniRx.Async.Triggers
+namespace exiii.Unity.Rx.Async.Triggers
 {
     [DisallowMultipleComponent]
     public class AsyncMouseTrigger : AsyncTriggerBase

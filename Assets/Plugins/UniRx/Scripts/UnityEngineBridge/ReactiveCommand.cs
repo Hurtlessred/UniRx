@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Threading;
 #if CSHARP_7_OR_LATER || (UNITY_2018_3_OR_NEWER && (NET_STANDARD_2_0 || NET_4_6))
-using UniRx.Async;
-using UniRx.Async.Internal;
+using exiii.Unity.Rx.Async;
+using exiii.Unity.Rx.Async.Internal;
 #endif
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     public interface IReactiveCommand<T> : IObservable<T>
     {
@@ -248,7 +248,7 @@ namespace UniRx
     /// </summary>
     public class AsyncReactiveCommand<T> : IAsyncReactiveCommand<T>
     {
-        UniRx.InternalUtil.ImmutableList<Func<T, IObservable<Unit>>> asyncActions = UniRx.InternalUtil.ImmutableList<Func<T, IObservable<Unit>>>.Empty;
+        exiii.Unity.Rx.InternalUtil.ImmutableList<Func<T, IObservable<Unit>>> asyncActions = exiii.Unity.Rx.InternalUtil.ImmutableList<Func<T, IObservable<Unit>>>.Empty;
 
         readonly object gate = new object();
         readonly IReactiveProperty<bool> canExecuteSource;
@@ -372,7 +372,7 @@ namespace UniRx
             if (IsDisposed) return;
 
             IsDisposed = true;
-            asyncActions = UniRx.InternalUtil.ImmutableList<Func<T, IObservable<Unit>>>.Empty;
+            asyncActions = exiii.Unity.Rx.InternalUtil.ImmutableList<Func<T, IObservable<Unit>>>.Empty;
 
 #if CSHARP_7_OR_LATER || (UNITY_2018_3_OR_NEWER && (NET_STANDARD_2_0 || NET_4_6))
             commonPromise?.SetCanceled();

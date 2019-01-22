@@ -7,8 +7,8 @@
     <ProjectGuid>{21C57E17-D4B8-4DA4-A6A2-07D8B2E5B3BD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>UniRx</RootNamespace>
-    <AssemblyName>UniRx</AssemblyName>
+    <RootNamespace>exiii.Unity.Rx</RootNamespace>
+    <AssemblyName>exiii.Unity.Rx</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -21,7 +21,7 @@
     <DefineConstants>TRACE;DEBUG;UniRxLibrary,CSHARP_7_OR_LATER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>3</WarningLevel>
-    <DocumentationFile>bin\Debug\UniRx.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\exiii.Unity.Rx.xml</DocumentationFile>
     <NoWarn>1573,1591</NoWarn>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
@@ -32,7 +32,7 @@
     <DefineConstants>TRACE;UniRxLibrary,CSHARP_7_OR_LATER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Release\UniRx.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\exiii.Unity.Rx.xml</DocumentationFile>
     <NoWarn>1591</NoWarn>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>

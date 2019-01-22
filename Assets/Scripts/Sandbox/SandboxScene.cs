@@ -3,12 +3,12 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using UniRx;
-using UniRx.Async;
-using UniRx.Async.Triggers;
+using exiii.Unity.Rx;
+using exiii.Unity.Rx.Async;
+using exiii.Unity.Rx.Async.Triggers;
 using UnityEngine;
 using UnityEngine.UI;
-using static UniRx.Async.UnityAsyncExtensions;
+using static exiii.Unity.Rx.Async.UnityAsyncExtensions;
 
 public class SandboxScene : MonoBehaviour
 {

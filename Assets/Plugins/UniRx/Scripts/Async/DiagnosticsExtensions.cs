@@ -14,7 +14,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace UniRx.Async
+namespace exiii.Unity.Rx.Async
 {
     public static class DiagnosticsExtensions
     {
@@ -236,7 +236,7 @@ namespace UniRx.Async
             {
                 return true;
             }
-            else if (declareType.StartsWith("UniRx.Async.CompilerServices"))
+            else if (declareType.StartsWith("exiii.Unity.Rx.Async.CompilerServices"))
             {
                 return true;
             }

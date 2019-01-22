@@ -8,9 +8,9 @@ using System.Collections.Generic;
 using UnityEngine;
 #endif
 
-// share between UniRx and UniRx.Async
+// share between exiii.Unity.Rx and exiii.Unity.Rx.Async
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     public static class UnityEqualityComparer
     {

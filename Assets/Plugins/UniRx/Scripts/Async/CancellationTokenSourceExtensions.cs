@@ -3,10 +3,10 @@
 
 using System.Threading;
 using UnityEngine;
-using UniRx.Async.Triggers;
+using exiii.Unity.Rx.Async.Triggers;
 using System;
 
-namespace UniRx.Async
+namespace exiii.Unity.Rx.Async
 {
     public static class CancellationTokenSourceExtensions
     {

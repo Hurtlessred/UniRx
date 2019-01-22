@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace UniRx.Operators
+namespace exiii.Unity.Rx.Operators
 {
     public delegate TR ZipFunc<T1, T2, T3, TR>(T1 arg1, T2 arg2, T3 arg3);
     public delegate TR ZipFunc<T1, T2, T3, T4, TR>(T1 arg1, T2 arg2, T3 arg3, T4 arg4);
@@ -368,7 +368,7 @@ namespace UniRx.Operators
         }
     }
 
-    // Generated from UniRx.Console.ZipGenerator.tt
+    // Generated from exiii.Unity.Rx.Console.ZipGenerator.tt
     #region NTH
 
     internal class ZipObservable<T1, T2, T3, TR> : OperatorObservableBase<TR>

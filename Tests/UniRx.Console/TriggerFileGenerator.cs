@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     public static class TriggerFileGenerator
     {
@@ -20,7 +20,7 @@ using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
 
-namespace UniRx.Async.Triggers
+namespace exiii.Unity.Rx.Async.Triggers
 {
     [DisallowMultipleComponent]
     public class AsyncAnimatorTrigger : AsyncTriggerBase
@@ -194,7 +194,7 @@ using System.Threading;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace UniRx.Async.Triggers
+namespace exiii.Unity.Rx.Async.Triggers
 {{
     [DisallowMultipleComponent]
     public class {item.TypeName.Replace("Observable", "Async")} : AsyncTriggerBase

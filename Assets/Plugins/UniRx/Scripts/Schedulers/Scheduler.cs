@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 
-namespace UniRx
+namespace exiii.Unity.Rx
 {
     // Scheduler Extension
     public static partial class Scheduler

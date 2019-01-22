@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace UniRx.Examples
+namespace exiii.Unity.Rx.Examples
 {
     public class Sample04_ConvertFromUnityCallback : MonoBehaviour
     {

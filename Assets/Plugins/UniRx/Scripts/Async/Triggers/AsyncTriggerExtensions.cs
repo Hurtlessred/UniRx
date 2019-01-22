@@ -4,7 +4,7 @@
 using System.Threading;
 using UnityEngine;
 
-namespace UniRx.Async.Triggers
+namespace exiii.Unity.Rx.Async.Triggers
 {
     public static class AsyncTriggerExtensions
     {

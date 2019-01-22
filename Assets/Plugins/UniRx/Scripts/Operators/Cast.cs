@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace UniRx.Operators
+namespace exiii.Unity.Rx.Operators
 {
     internal class CastObservable<TSource, TResult> : OperatorObservableBase<TResult>
     {
